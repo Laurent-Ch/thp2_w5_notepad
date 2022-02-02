@@ -1,0 +1,19 @@
+.page-container {
+  margin: 0;
+  padding: 0;
+  height: 98vh;
+  border: 3px solid red;
+  display: flex;
+}
+
+.navbar-left {
+  width: 20%;
+  height: 99.5%;
+  border: 3px solid green;
+}
+
+.main-right {
+  width: 80%;
+  height: 99.5%;
+  border: 3px solid yellow;
+}
