@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import MarkdownInput from 'components/MarkdownInput/MarkdownInput';
 import NoteDisplay from 'components/NoteDisplay/NoteDisplay';
+import SaveNote from 'components/SaveNote/SaveNote';
 
 const App = () => {
   const [userInput, setUserInput] = useState('');
@@ -20,17 +21,18 @@ const App = () => {
     setUserInputTitle(callbackValue);
   }
 
-  const BODY_ROWS = 16;
+  const BODY_ROWS = 14;
   const TITLE_ROWS = 3;
 
   return (
-  <div  iv className='page-container'>
+  <div className='page-container'>
     <div className='navbar-left'>Test1</div>
     <div className='main-right'>
       <NoteDisplay cssTarget='title-display' userInputToDisplay={userInputTitle}/>
       <NoteDisplay cssTarget='body-display' userInputToDisplay={userInput}/>
       <MarkdownInput rows={TITLE_ROWS} placeholder='new note title...' cssTarget='title-field' updateUserInput={updateUserInputTitle} />
       <MarkdownInput rows={BODY_ROWS} placeholder='new note body...' cssTarget='text-field' updateUserInput={updateUserInputBody} />
+      <SaveNote noteTitle={userInputTitle} noteBody={userInput} />
     </div>
   </div>
   );
