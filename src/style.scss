@@ -1,3 +1,14 @@
+$primary-bg: #121212;
+$primary-font-color: #A9A9A9;
+
+$secundary-bg: #A9A9A9;
+$secundary-font-color: black;
+
+body {
+  background-color: $primary-bg;
+  color: $primary-font-color;
+}
+
 .page-container {
   margin: 0;
   padding: 0;
@@ -16,4 +27,39 @@
   width: 80%;
   height: 99.5%;
   border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.title-field {
+  width: 99%;
+  border: 3px solid indianred;
+  background-color: $secundary-bg;
+  color: $secundary-font-color;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.text-field {
+  width: 99%;
+  border: 3px solid pink;
+  background-color: $secundary-bg;
+  color: $secundary-font-color;
+  font-size: 1.4em;
+}
+
+.title-display {
+  width: 99.5%;
+  height: 8.5%;
+  border: 3px solid maroon;
+  margin-bottom: 20px;
+}
+
+.body-display {
+  width: 99.5%;
+  height: 35%;
+  border: 3px solid aqua;
 }
