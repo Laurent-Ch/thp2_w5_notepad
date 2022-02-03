@@ -5,10 +5,9 @@ const LocalStorageEntryDisplay = (props) => {
 
   const handleNoteErasure = () => {
     localStorage.removeItem(props.entryTitle);
+    props.handleNotesUpdate()
     props.handleNoteRemoved(1);
   }
-
-  console.log(props.handleNoteRemoved);
 
   return (
     <div className='note-wrapper'>

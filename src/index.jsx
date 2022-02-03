@@ -15,7 +15,6 @@ const App = () => {
   const [localStorageUpdated, setLocalStorageUpdated] = useState('');
   const [noteRemoved, setNoteRemoved] = useState('');
 
-
   useEffect(() => {
     console.log(userInput, userInputTitle)
   }, [userInput, userInputTitle]);
@@ -42,8 +41,8 @@ const App = () => {
   return (
   <div className='page-container'>
     <div className='navbar-left'>
-      <NewNote btnText='New Note' updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle}  />
-      <LocalStorageEntriesList handleNoteRemoved={handleNoteRemoved} />
+      <NewNote btnText='New Note' updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle}   />
+      <LocalStorageEntriesList handleNoteRemoved={handleNoteRemoved} updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle} />
     </div>
     <div className='main-right'>
       <NoteDisplay cssTarget='title-display' userInputToDisplay={userInputTitle}/>
