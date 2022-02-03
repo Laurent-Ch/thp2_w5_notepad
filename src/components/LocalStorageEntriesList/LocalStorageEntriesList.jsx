@@ -9,9 +9,9 @@ const LocalStorageEntriesList = (props) => {
     const targetNote = props.notes.find((note) => note.id === id);
     console.log(targetNote.key);
     console.log(targetNote.value);
-    // props.updateUserInputTitle(targetNote.key);
-    // props.updateUserInputBody(targetNote.value);
-    props.handleNotesUpdate();
+  //   // props.updateUserInputTitle(targetNote.key);
+  //   // props.updateUserInputBody(targetNote.value);
+  //   props.handleNotesUpdate();
   }
 
   return (

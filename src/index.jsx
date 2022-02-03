@@ -57,7 +57,7 @@ const App = () => {
   <div className='page-container'>
     <div className='navbar-left'>
       <NewNote btnText='New Note' updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle}   />
-      <LocalStorageEntriesList handleNoteRemoved={handleNoteRemoved} handleNotesupdate={handleNotesUpdate} notes={notes} updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle} />
+      <LocalStorageEntriesList handleNoteRemoved={handleNoteRemoved} handleNotesUpdate={handleNotesUpdate} notes={notes} updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle} />
     </div>
     <div className='main-right'>
       <NoteDisplay cssTarget='title-display' userInputToDisplay={userInputTitle}/>
