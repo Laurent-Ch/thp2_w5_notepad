@@ -51,13 +51,17 @@ body {
   margin: 2.5%;
   padding: 2.5%;
   font-size: 1em;
+  cursor: pointer;
 
   h2 {
     color: $tertiary-color;
     margin: 0;
     padding: 0;
-
   }
+
+  .note-body {
+    text-align: justify;
+    text-justify: inter-word;  }
 }
 
 .main-right {
@@ -110,5 +114,6 @@ body {
   width: 200px;
   height: 30px;
   margin-top:10px;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
