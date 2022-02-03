@@ -15,5 +15,4 @@ const NoteDisplay = (props) => {
     <div className={props.cssTarget} dangerouslySetInnerHTML={DangerousHtmlConversion} />
   );
 }
-
 export default NoteDisplay;

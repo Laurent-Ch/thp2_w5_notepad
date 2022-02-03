@@ -12,5 +12,4 @@ const NewNote = (props) => {
     <MainButton btnText={props.btnText} functionReceived={handleNew}/>
   );
 }
-
 export default NewNote;

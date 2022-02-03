@@ -2,11 +2,8 @@ import React from 'react';
 import { TiDeleteOutline } from 'react-icons/ti';
 
 const LocalStorageEntryDisplay = (props) => {
-
   const displaySpecificNote = (id) => {
     const targetNote = props.notes.find((note) => note.id === id);
-    console.log(targetNote.key);
-    console.log(targetNote.value);
     props.updateUserInputTitle(targetNote.key);
     props.updateUserInputBody(targetNote.value);
   }
@@ -14,7 +11,6 @@ const LocalStorageEntryDisplay = (props) => {
   const handleNoteErasure = () => {
     localStorage.removeItem(props.entryTitle);
     props.handleNotesUpdate();
-    props.handleNoteRemoved(1);
   }
 
   return (
@@ -27,7 +23,6 @@ const LocalStorageEntryDisplay = (props) => {
     </div>
   );
 }
-
 export default LocalStorageEntryDisplay;
 
 
