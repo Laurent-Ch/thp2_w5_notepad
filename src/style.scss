@@ -46,12 +46,29 @@ body {
   }
 }
 
+.note-wrapper {
+  display: flex;
+
+  .note-container--erase {
+    background-color: $secundary-bg;
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
 .note-container {
   border: 3px solid white;
+  width: 100%;
   margin: 2.5%;
   padding: 2.5%;
   font-size: 1em;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     color: $tertiary-color;
@@ -61,7 +78,8 @@ body {
 
   .note-body {
     text-align: justify;
-    text-justify: inter-word;  }
+    text-justify: inter-word;
+  }
 }
 
 .main-right {

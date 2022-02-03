@@ -11,7 +11,7 @@ const LocalStorageEntriesList = (props) => {
   return (
     <div className='notes-list'>
       {EntriesToDisplay.map((content, index) => {
-        return <LocalStorageEntryDisplay key={index} entryTitle={content.key} entryBody={content.value}  />
+        return <LocalStorageEntryDisplay key={index} entryTitle={content.key} entryBody={content.value} handleNoteRemoved={props.handleNoteRemoved} />
       })}
     </div>
   )

@@ -7,7 +7,7 @@ const MarkdownInput = (props) => {
   }
 
   return (
-    <textarea className={props.cssTarget} onChange={onChange} type='text' size='100%' placeholder={props.placeholder} wrap='wrap' rows={props.rows} /> 
+    <textarea className={props.cssTarget} onChange={onChange} value={props.value} type='text' size='100%' placeholder={props.placeholder} wrap='wrap' rows={props.rows} /> 
   );
 }
 
