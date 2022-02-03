@@ -8,6 +8,7 @@ import NoteDisplay from 'components/NoteDisplay/NoteDisplay';
 import SaveNote from 'components/SaveNote/SaveNote';
 import MainButton from 'components/MainButton/MainButton';
 import LocalStorageEntriesList from 'components/LocalStorageEntriesList/LocalStorageEntriesList';
+import NewNote from 'components/NewNote/NewNote';
 
 const App = () => {
   const [userInput, setUserInput] = useState('');
@@ -36,7 +37,7 @@ const App = () => {
   return (
   <div className='page-container'>
     <div className='navbar-left'>
-      <MainButton btnText='New Note' />
+      <NewNote btnText='New Note' updateUserInputBody={updateUserInputBody} updateUserInputTitle={updateUserInputTitle}  />
       <LocalStorageEntriesList />
     </div>
     <div className='main-right'>
