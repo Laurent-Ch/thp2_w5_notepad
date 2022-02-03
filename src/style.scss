@@ -48,6 +48,8 @@ body {
 
 .note-wrapper {
   display: flex;
+  border: 2px solid purple;
+  cursor: pointer;
 
   .note-container--erase {
     background-color: $secundary-bg;
@@ -57,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 }
 
 .note-container {
@@ -66,7 +68,6 @@ body {
   margin: 2.5%;
   padding: 2.5%;
   font-size: 1em;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
 
