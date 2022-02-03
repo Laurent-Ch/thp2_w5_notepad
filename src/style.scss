@@ -13,17 +13,17 @@ body {
 }
 
 .page-container {
+    // border: 3px solid red;
   margin: 0;
   padding: 0;
   height: 98vh;
-  border: 3px solid red;
   display: flex;
 }
 
 .navbar-left {
+   // border: 3px solid green;
   width: 20%;
   height: 99.5%;
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,8 +44,8 @@ body {
 }
 
 .note-wrapper {
+  // border: 2px solid purple;
   display: flex;
-  border: 2px solid purple;
   cursor: pointer;
 
   .note-container--erase {
@@ -60,7 +60,7 @@ body {
 }
 
 .note-container {
-  border: 3px solid white;
+  // border: 3px solid white;
   width: 100%;
   margin: 2.5%;
   padding: 2.5%;
@@ -81,9 +81,9 @@ body {
 }
 
 .main-right {
+  // border: 3px solid yellow;
   width: 80%;
   height: 99.5%;
-  border: 3px solid yellow;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -91,8 +91,8 @@ body {
 }
 
 .title-field {
+    // border: 3px solid indianred;
   width: 99%;
-  border: 3px solid indianred;
   background-color: $secundary-bg;
   color: $secundary-font-color;
   font-size: 1.4em;
@@ -102,29 +102,29 @@ body {
 
 
 .text-field {
+  // border: 3px solid pink;
   width: 99%;
-  border: 3px solid pink;
   background-color: $secundary-bg;
   color: $secundary-font-color;
   font-size: 1.4em;
 }
 
 .title-display {
+  // border: 3px solid maroon;
   width: 99.5%;
   height: 8.5%;
-  border: 3px solid maroon;
   margin-bottom: 20px;
 }
 
 .body-display {
+  // border: 3px solid aqua;
   width: 99.5%;
   height: 40%;
-  border: 3px solid aqua;
 }
 
 .main-btn{
+  // color: white;
   background-color: $tertiary-bg;
-  color: white;
   border: none;
   font-size: 1.2em;
   width: 200px;
