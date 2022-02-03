@@ -1,7 +1,7 @@
 import React from 'react';
 import LocalStorageEntryDisplay from 'components/LocalStorageEntryDisplay/LocalStorageEntryDisplay';
 
-const LocalStorageEntriesList = (props) => {  
+const LocalStorageEntriesList = () => {  
 
   const EntriesToDisplay = [];
   for (let i = 0; i < localStorage.length; i++) {

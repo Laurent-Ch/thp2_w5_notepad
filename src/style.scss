@@ -1,12 +1,18 @@
+$main-font: 'Lato', sans-serif;
+
 $primary-bg: #121212;
 $primary-font-color: #A9A9A9;
 
 $secundary-bg: #A9A9A9;
 $secundary-font-color: black;
 
+$tertiary-color: red;
+$tertiary-bg: red;
+
 body {
   background-color: $primary-bg;
   color: $primary-font-color;
+  font-family: $main-font;
 }
 
 .page-container {
@@ -24,6 +30,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.notes-list {
+  margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  // Hiding the scrolling bar.
+  // Source: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.note-container {
+  border: 3px solid white;
+  margin: 2.5%;
+  padding: 2.5%;
+  font-size: 1em;
+
+  h2 {
+    color: $tertiary-color;
+    margin: 0;
+    padding: 0;
+
+  }
 }
 
 .main-right {
@@ -69,7 +103,7 @@ body {
 }
 
 .main-btn{
-  background-color: red;
+  background-color: $tertiary-bg;
   color: white;
   border: none;
   font-size: 1.2em;

@@ -25,6 +25,7 @@ const App = () => {
     setUserInputTitle(callbackValue);
   }
 
+  // When a state has its value updated, the whole return section is re-rendered
   const handleLocalStorageUpdated = (callbackValue) => {
     setLocalStorageUpdated(localStorageUpdated + callbackValue);
   }
