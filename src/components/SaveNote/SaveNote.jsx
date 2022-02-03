@@ -1,4 +1,5 @@
 import React from 'react';
+import MainButton from 'components/MainButton/MainButton';
 
 const SaveNote = (props) => {  
   const handleSave = () => {
@@ -6,14 +7,14 @@ const SaveNote = (props) => {
     let checkSave = localStorage.getItem(props.noteTitle);
     console.log(checkSave);
     console.log(localStorage.length);
-    localStorage.clear();
+    // localStorage.clear();
     console.log(localStorage.length);
     // Seems to work as expected, but getItem() only returns the title for now.
-
+    props.handleLocalStorageUpdated(1);
   } 
 
   return (
-    <button className='main-btn' type='button' onClick={handleSave}>Save note</button>
+    <MainButton btnText='Save Note' functionReceived={handleSave}/>
   );
 }
 
