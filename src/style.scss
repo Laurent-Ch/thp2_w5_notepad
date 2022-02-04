@@ -46,7 +46,6 @@ body {
 .note-wrapper {
   // border: 2px solid purple;
   display: flex;
-  cursor: pointer;
 
   .note-container--erase {
     background-color: $secundary-bg;
@@ -56,6 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -67,6 +67,7 @@ body {
   font-size: 1em;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   h2 {
     color: $tertiary-color;
