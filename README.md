@@ -8,4 +8,4 @@ The user can:
 - Edit any note as long as the title isn't changed. If it is, saving it will cause a new entry to be created instead. It's not that much of an issue since: 
 - Any note can be erased thanks to the dedicated little cross button. 
 
-Slightly annoying detail: the title is being displayed on the navbar with its raw markdown syntax. No light mode, happy eyes galore. Minimalist vibe (codeword for "just enough CSS"). In the end, its simplicity makes it surprisingly functional and agreeable.
+Slightly annoying detail: on the navbar, the content of the note cards is being displayed with the raw markdown syntax. No light mode, happy eyes galore. Minimalist vibe (codeword for "just enough CSS"). In the end, its simplicity makes it surprisingly functional and agreeable.
